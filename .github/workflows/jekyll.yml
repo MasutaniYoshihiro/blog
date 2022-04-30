@@ -1,31 +1,21 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Jekyll push & deploy.
-
-# Controls when the workflow will run
+name: jekyll blog automatically deployment
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-
-      # Specify the target branch (optional)
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
