@@ -3,6 +3,7 @@ layout: owner
 title: プライバシーポリシー
 permalink: /privacy/
 tag: owner
+sitemap: false
 ---
 
 ## 個人情報の利用目的

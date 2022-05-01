@@ -19,6 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.6"
   # for jekyll-actions https://github.com/marketplace/actions/jekyll-actions
   gem 'jekyll-asciidoc', '~> 2.1.1'
+  gem 'jekyll-sitemap'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
