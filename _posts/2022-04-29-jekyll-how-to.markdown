@@ -1,9 +1,24 @@
 ---
 layout: post
-title:  "Jekyllの作り方覚書"
+title:  "RubyのインストールからローカルでJekyllのサイトを実行するまで"
 date:   2022-04-29 15:11:25 +0900
 categories: jekyll update
+tag: article
 ---
+
+## Jekyllってなに？
+静的サイトジェネレーター<br>
+ → 特定のルールに従って記述されたテキストとかをHTMLとして生成するツール
+
+このセクションの記述はこんな感じ。
+```
+## Jekyllってなに？
+静的サイトジェネレーター
+:
+:
+```
+
+
 
 ## 環境準備
 

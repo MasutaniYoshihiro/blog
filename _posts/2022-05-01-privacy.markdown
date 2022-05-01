@@ -2,6 +2,7 @@
 layout: owner
 title: プライバシーポリシー
 permalink: /privacy/
+tag: owner
 ---
 
 ## 個人情報の利用目的

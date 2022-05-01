@@ -14,10 +14,18 @@
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">Mail</a></li>
+          {%- endif -%}
+
+          {% for tag in site.tags %}
+            {% if tag[0] == 'owner' %}
+              {% for post in tag[1] %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
 

@@ -1,7 +1,8 @@
 ---
-layout: own
+layout: owner
 title: 著作権について
 permalink: /cyosaku/
+tag: owner
 ---
 
 当ブログで掲載している文章や画像などにつきましては、無断転載することを禁止します。
