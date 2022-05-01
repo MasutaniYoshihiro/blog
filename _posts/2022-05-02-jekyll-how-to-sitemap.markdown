@@ -6,13 +6,14 @@ categories: jekyll
 tag: article
 ---
 
-## 手順
+## 概要
 
 1. Gemにjekyll-sitemapを追加
 2. _config.ymlにjekyll-sitemapを追加
 3. 除外ページ設定
 4. ビルド
 
+## 手順
 ### 1.Gemにjekyll-sitemapを追加
 Gemfileに追加
 ```gemfile

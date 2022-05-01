@@ -6,13 +6,14 @@ categories: jekyll
 tag: article
 ---
 
-## 手順
+## 概要
 
 1. google-analytics.htmlを作成
 2. ヘッダーに追加
 3. _config.ymlにidを追加
 4. ビルド
 
+## 手順
 ### 1.google-analytics.htmlを作成
 _includesディレクトリにgoogle-analytics.htmlを作成し以下のコードを貼り付けます。
 ```html
