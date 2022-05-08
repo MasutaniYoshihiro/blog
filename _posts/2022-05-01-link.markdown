@@ -1,7 +1,7 @@
 ---
 layout: owner
 title: リンクについて
-permalink: /link/
+permalink: /p/link.html
 tag: owner
 sitemap: false
 ---

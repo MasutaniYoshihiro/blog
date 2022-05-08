@@ -1,7 +1,7 @@
 ---
 layout: owner
 title: プライバシーポリシー
-permalink: /privacy/
+permalink: /p/privacy.html
 tag: owner
 sitemap: false
 ---

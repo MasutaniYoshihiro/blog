@@ -1,7 +1,7 @@
 ---
 layout: owner
 title: 著作権について
-permalink: /cyosaku/
+permalink: /p/cyosaku.html
 tag: owner
 sitemap: false
 ---

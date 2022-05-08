@@ -82,3 +82,6 @@ defaults:
       path: 'googlef10320429ad67f0e.html'
     values:
       sitemap: false
+
+design:
+  date_format: "%Y-%m-%d"
