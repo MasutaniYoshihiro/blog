@@ -2,7 +2,7 @@
 layout: post
 title:  "RubyのインストールからローカルでJekyllのサイトを実行するまで"
 date:   2022-04-29 15:11:25 +0900
-categories: jekyll update
+categories: jekyll
 tag: article
 ---
 
