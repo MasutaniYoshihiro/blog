@@ -72,3 +72,13 @@ asciidoctor:
 
 # Google Analytics
 google_analytics: G-YRR738T908
+
+defaults:
+  - scope:
+      path: 'assets/'
+    values:
+      sitemap: false
+  - scope:
+      path: 'googlef10320429ad67f0e.html'
+    values:
+      sitemap: false
