@@ -1,7 +1,2 @@
----
-layout: null
----
-# クローラーの指定
 User-agent: *
-# サイトマップの場所
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://blog.swimming-bird.link/sitemap.xml
