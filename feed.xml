@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://blog.swimming-bird.link/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.swimming-bird.link/" rel="alternate" type="text/html" /><updated>2022-07-09T11:44:26+00:00</updated><id>https://blog.swimming-bird.link/feed.xml</id><title type="html">piyo piyo blog</title><subtitle>とにかく記憶力に自身がないので、日常的に出会う忘れたくない技術的な内容をありのままに未来の自分に向けてアウトプットしていく。 ついでにこのブログが誰かの目に止まれば、一期一会 好きな言葉はケセラセラ</subtitle><author><name>管理人</name></author><entry><title type="html">KMarkdown</title><link href="https://blog.swimming-bird.link/jekyll/2022/07/09/kmarkdown.html" rel="alternate" type="text/html" title="KMarkdown" /><published>2022-07-09T06:57:00+00:00</published><updated>2022-07-09T06:57:00+00:00</updated><id>https://blog.swimming-bird.link/jekyll/2022/07/09/kmarkdown</id><content type="html" xml:base="https://blog.swimming-bird.link/jekyll/2022/07/09/kmarkdown.html"><![CDATA[<p>よく使うはずのやつを覚え書き！</p>
+
+<h2 id="ヘッダーhタグ">ヘッダー（hタグ）</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># H1 header
+## H2 header
+### H3 header
+#### H4 header
+##### H5 header
+###### H6 header
+</code></pre></div></div>
+
+<h1 id="h1-header">H1 header</h1>
+<h2 id="h2-header">H2 header</h2>
+<h3 id="h3-header">H3 header</h3>
+<h4 id="h4-header">H4 header</h4>
+<h5 id="h5-header">H5 header</h5>
+<h6 id="h6-header">H6 header</h6>
+
+<h2 id="引用blockquotes">引用（Blockquotes）</h2>
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Jekyllは、個人、プロジェクト又は組織のサイト向けの、簡単で、ブログのような静的サイトジェネレーター（英語版）である。
+&gt; GitHubの共同創業者であるトム・プレストン・ワーナー（英語版）によって開発が開始され、Rubyで記述されており、自由ソフトウェアライセンスのMIT Licenseの条件に基づいて配布されている。
+&gt;
+&gt; &gt; Jekyllは、個人、プロジェクト又は組織のサイト向けの、簡単で、ブログのような静的サイトジェネレーター（英語版）である。
+&gt; &gt; GitHubの共同創業者であるトム・プレストン・ワーナー（英語版）によって開発が開始され、Rubyで記述されており、自由ソフトウェアライセンスのMIT Licenseの条件に基づいて配布されている。
+&gt;
+&gt; ### ヘッダーとかも書ける
+</code></pre></div></div>
+<p><strong><em>実例</em></strong></p>
+<blockquote>
+  <p>Jekyllは、個人、プロジェクト又は組織のサイト向けの、簡単で、ブログのような静的サイトジェネレーター（英語版）である。
+GitHubの共同創業者であるトム・プレストン・ワーナー（英語版）によって開発が開始され、Rubyで記述されており、自由ソフトウェアライセンスのMIT Licenseの条件に基づいて配布されている。</p>
+
+  <h3 id="ヘッダーとかも書ける">ヘッダーとかも書ける</h3>
+  <blockquote>
+    <p>Jekyllは、個人、プロジェクト又は組織のサイト向けの、簡単で、ブログのような静的サイトジェネレーター（英語版）である。
+GitHubの共同創業者であるトム・プレストン・ワーナー（英語版）によって開発が開始され、Rubyで記述されており、自由ソフトウェアライセンスのMIT Licenseの条件に基づいて配布されている。</p>
+  </blockquote>
+
+</blockquote>
+
+<h2 id="コードブロック">コードブロック</h2>
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~~~~
+~を3つ以上つなげて囲む
+~~~
+初回出現以上の~出現行でクローズされる
+~~~~~~~~
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~を3つ以上つなげて囲む
+~~~
+初回出現以上の~出現行でクローズされる
+</code></pre></div></div>
+
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ ruby
+def who?
+  puts "jekyll!"
+  # 言語を開始行の末尾に入れるとハイライトしてくれる
+end
+~~~
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">who?</span>
+  <span class="nb">puts</span> <span class="s2">"jekyll!"</span>
+  <span class="c1"># 言語を開始行の末尾に入れるとハイライトしてくれる</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="行区切り">行区切り</h2>
+
+<p><strong><em>ソースコード（書き方はいろいろある）</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* * *
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<hr />
+
+<p>↑これ</p>
+
+<h2 id="リスト">リスト</h2>
+
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. This is a list item
+2. And another item
+2. And the third one
+   with additional text
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<ol>
+  <li>This is a list item</li>
+  <li>And another item</li>
+  <li>And the third one
+with additional text</li>
+</ol>
+
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* A list item
+with additional text
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<ul>
+  <li>A list item
+with additional text</li>
+</ul>
+
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  This is a list item
+
+    &gt; with a blockquote
+
+    # And a header
+
+2.  Followed by another item
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<ol>
+  <li>
+    <p>This is a list item</p>
+
+    <blockquote>
+      <p>with a blockquote</p>
+    </blockquote>
+
+    <h1 id="and-a-header">And a header</h1>
+  </li>
+  <li>
+    <p>Followed by another item</p>
+  </li>
+</ol>
+
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Item one
+   1. sub item one
+   2. sub item two
+   3. sub item three
+2. Item two
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<ol>
+  <li>Item one
+    <ol>
+      <li>sub item one</li>
+      <li>sub item two</li>
+      <li>sub item three</li>
+    </ol>
+  </li>
+  <li>Item two</li>
+</ol>
+
+<h2 id="extensions">Extensions</h2>
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>これは私が
+{::comment}
+（ここで一息つく）
+{:/comment}
+... まだ小さいときにあった本当の話です。
+
+後ろを振り向くと
+そこには {::nomarkdown}**白く血の引いた女の顔が**{:/}!
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+
+<p>これは私が
+<!-- 
+（ここで一息つく）
+ -->
+… まだ小さいときにあった本当の話です。</p>
+
+<p>後ろを振り向くと
+そこには **白く血の引いた女の顔が**!</p>
+
+<h2 id="リンク">リンク</h2>
+
+<p><strong><em>ソースコード</em></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>詳しく見るには [ここ](http://example.com)
+をクリックしてください！
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+
+<p>詳しく見るには <a href="http://example.com">ここ</a>
+をクリックしてください！</p>
+
+<h2 id="画像リンク">画像リンク</h2>
+
+<p><strong><em>ソースコード</em></strong></p>
+
+<p>画像はフォルダを作成して入れておく。</p>
+
+<p>絶対パス（/img/sample_image.png）の場合はディレクトリ直下からの絶対パスの場所に、</p>
+
+<p>相対パス（img/sample_image.png）の場合は記事パスの直下に作成する必要がある。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>サンプル画像だよ: ![サンプルの画像](/img/sample_image.png)
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+
+<p>サンプル画像だよ: <img src="/img/sample_image.png" alt="サンプルの画像" /></p>
+
+<h2 id="テーブル">テーブル</h2>
+
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+{: rules="groups"}
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 id="ブロック属性">ブロック属性</h2>
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; ブロックにtitleが付与される
+{: title="Blockquote title"}
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<blockquote title="Blockquote title">
+  <p>ブロックにtitleが付与される</p>
+</blockquote>
+
+<p><strong><em>ソースコード</em></strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; クラスを付与したりできる
+{: .class1 .class2}
+</code></pre></div></div>
+
+<p><strong><em>実例</em></strong></p>
+<blockquote class="class1 class2">
+  <p>クラスを付与したりできる</p>
+</blockquote>
+
+<h3 id="参考">参考</h3>
+<p>https://kramdown.gettalong.org/quickref.html</p>]]></content><author><name>管理人</name></author><category term="jekyll" /><category term="article" /><summary type="html"><![CDATA[よく使うはずのやつを覚え書き！]]></summary></entry><entry><title type="html">CloudFormation入門</title><link href="https://blog.swimming-bird.link/aws/2022/07/09/CloudFormation%E4%BA%8B%E5%A7%8B%E3%82%81.html" rel="alternate" type="text/html" title="CloudFormation入門" /><published>2022-07-09T06:49:00+00:00</published><updated>2022-07-09T06:49:00+00:00</updated><id>https://blog.swimming-bird.link/aws/2022/07/09/CloudFormation%E4%BA%8B%E5%A7%8B%E3%82%81</id><content type="html" xml:base="https://blog.swimming-bird.link/aws/2022/07/09/CloudFormation%E4%BA%8B%E5%A7%8B%E3%82%81.html"><![CDATA[<h2 id="概要">概要</h2>
+
+<ol>
+  <li>CloudFormationとは？</li>
+  <li>メリット・デメリット</li>
+  <li>兎にも角にもやってみよう</li>
+</ol>
+
+<h2 id="aws-cloudformationとは">AWS CloudFormationとは？</h2>
+
+<p>CloudFormationはAWSのリソースを構築管理できるIaCツールです。
+IaCとは
+Infrastructure as Code（IaC） はコンピューティング・インフラ（プロセス、ベアメタルサーバー、仮想サーバーなど）の構成管理・機械処理可能な定義ファイルの設定・プロビジョニングを自動化するプロセスである。定義されたファイルはバージョン管理システムで保持することもある。従来、手動のプロセスではなくスクリプトや宣言的な定義によって行われていたが、IaCの開発は今では、宣言的なアプローチに焦点が当てられている。</p>]]></content><author><name>管理人</name></author><category term="aws" /><category term="article" /><summary type="html"><![CDATA[概要]]></summary></entry><entry><title type="html">AndroidのWebViewで戻るを実装したい</title><link href="https://blog.swimming-bird.link/android/2022/05/08/android-webview.html" rel="alternate" type="text/html" title="AndroidのWebViewで戻るを実装したい" /><published>2022-05-08T13:33:25+00:00</published><updated>2022-05-08T13:33:25+00:00</updated><id>https://blog.swimming-bird.link/android/2022/05/08/android-webview</id><content type="html" xml:base="https://blog.swimming-bird.link/android/2022/05/08/android-webview.html"><![CDATA[<h2 id="概要">概要</h2>
+<p>WebViewで特定のサイトを表示することはできるけど、<br />
+戻るとか、<br />
+進むとか、<br />
+閉じるとか、そういったユーザーアクションをきちんと実装するにはデフォルトの挙動だけだとうまく行かない。</p>
+
+<p>例えば、デフォルトの戻るの挙動のままだと本当は前のページに戻って欲しいのに、<br />
+Activityが閉じられたりして困ってしまう。<br />
+そんなときは、デフォルトの挙動を書き換える必要がある。</p>
+
+<ol>
+  <li>getOnBackProssedDispatcherにコールバックを追加する</li>
+</ol>
+
+<h2 id="手順">手順</h2>
+<h3 id="1getonbackprosseddispatcherにコールバックを追加する">1.getOnBackProssedDispatcherにコールバックを追加する</h3>
+<p>onCreateでデフォルトの「戻る」アクションのイベントハンドラにコールバックを追加することで独自のイベントを処理できる。
+WebViewのgoBack()でHistoryBackが実装できる。</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyWebViewFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+    <span class="c1">// WebView</span>
+    <span class="kd">private</span> <span class="nc">WebView</span> <span class="n">mWebView</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nd">@Nullable</span> <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+
+        <span class="c1">// callbackの定義</span>
+        <span class="nc">OnBackPressedCallback</span> <span class="n">callback</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">OnBackPressedCallback</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">handleOnBackPressed</span><span class="o">()</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">mWebView</span><span class="o">.</span><span class="na">canGoBack</span><span class="o">())</span> <span class="o">{</span>
+                    <span class="c1">// Webページ内のHistoryBack</span>
+                    <span class="n">mWebView</span><span class="o">.</span><span class="na">goBack</span><span class="o">();</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">};</span>
+        <span class="c1">// callbackの登録</span>
+        <span class="n">requireActivity</span><span class="o">().</span><span class="na">getOnBackPressedDispatcher</span><span class="o">().</span><span class="na">addCallback</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">callback</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nc">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="nc">ViewGroup</span> <span class="n">container</span><span class="o">,</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">shop_fragment</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="c1">// webviewをインスタンスとして保持</span>
+        <span class="n">mWebView</span><span class="o">=</span> <span class="o">(</span><span class="nc">WebView</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">webview</span><span class="o">);</span>
+        <span class="n">mWebView</span><span class="o">.</span><span class="na">setWebViewClient</span><span class="o">(</span><span class="k">new</span> <span class="nc">WebViewClient</span><span class="o">());</span>
+        <span class="n">mWebView</span><span class="o">.</span><span class="na">loadUrl</span><span class="o">(</span><span class="s">"http://example.com"</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">view</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="参考">参考</h2>
+<p><a href="https://developer.android.com/guide/navigation/navigation-custom-back?hl=ja">適切な「戻る」ナビゲーションを提供する</a></p>]]></content><author><name>管理人</name></author><category term="Android" /><category term="article" /><summary type="html"><![CDATA[概要 WebViewで特定のサイトを表示することはできるけど、 戻るとか、 進むとか、 閉じるとか、そういったユーザーアクションをきちんと実装するにはデフォルトの挙動だけだとうまく行かない。]]></summary></entry><entry><title type="html">jekyllにGoogleAnalyticsを設定する方法</title><link href="https://blog.swimming-bird.link/jekyll/2022/05/01/jekyll-how-to-ga.html" rel="alternate" type="text/html" title="jekyllにGoogleAnalyticsを設定する方法" /><published>2022-05-01T21:11:25+00:00</published><updated>2022-05-01T21:11:25+00:00</updated><id>https://blog.swimming-bird.link/jekyll/2022/05/01/jekyll-how-to-ga</id><content type="html" xml:base="https://blog.swimming-bird.link/jekyll/2022/05/01/jekyll-how-to-ga.html"><![CDATA[<h2 id="概要">概要</h2>
+
+<ol>
+  <li>google-analytics.htmlを作成</li>
+  <li>ヘッダーに追加</li>
+  <li>_config.ymlにidを追加</li>
+  <li>ビルド</li>
+</ol>
+
+<h2 id="手順">手順</h2>
+<h3 id="1google-analyticshtmlを作成">1.google-analytics.htmlを作成</h3>
+<p>_includesディレクトリにgoogle-analytics.htmlを作成し以下のコードを貼り付けます。</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">async</span> <span class="na">src=</span><span class="s">"https://www.googletagmanager.com/gtag/js?id=G-YRR738T908"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+  <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">||</span> <span class="p">[];</span>
+  <span class="kd">function</span> <span class="nx">gtag</span><span class="p">(){</span><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);}</span>
+  <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">js</span><span class="dl">'</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+
+  <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">config</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">G-YRR738T908</span><span class="dl">'</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h3 id="2ヘッダーに記載を追加">2.ヘッダーに記載を追加</h3>
+<p>ヘッダーを定義しているhtmlに記述を追加します。<br />
+例えば、_include/head.html<br />
+※ご自身の環境に一致するファイルに読み替えてください。</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;head&gt;</span>
+  :
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+  :
+<span class="nt">&lt;/head&gt;</span>
+
+</code></pre></div></div>
+
+<h3 id="3_configymlにidを追加">3._config.ymlにidを追加</h3>
+<p>GoogleAnalyticsのプロパティのデータストリームごとに発行される「測定ID」です。</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>google_analytics: G-<span class="gs">********</span><span class="ge">**</span>
+</code></pre></div></div>
+
+<h3 id="4ビルド">4.ビルド</h3>
+<p>本番環境でビルド</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">JEKYLL_ENV</span><span class="o">=</span>production bundle <span class="nb">exec </span>jekyll build
+</code></pre></div></div>
+
+<p>ブラウザで表示されたページのソースを見ると、headタグ内にgoogle-analytics.htmlの内容が存在しているはずです。</p>]]></content><author><name>管理人</name></author><category term="jekyll" /><category term="article" /><summary type="html"><![CDATA[概要]]></summary></entry><entry><title type="html">jekyllにサイトマップを追加する方法【jekyll-sitemap】</title><link href="https://blog.swimming-bird.link/jekyll/2022/05/01/jekyll-how-to-sitemap.html" rel="alternate" type="text/html" title="jekyllにサイトマップを追加する方法【jekyll-sitemap】" /><published>2022-05-01T21:11:25+00:00</published><updated>2022-05-01T21:11:25+00:00</updated><id>https://blog.swimming-bird.link/jekyll/2022/05/01/jekyll-how-to-sitemap</id><content type="html" xml:base="https://blog.swimming-bird.link/jekyll/2022/05/01/jekyll-how-to-sitemap.html"><![CDATA[<h2 id="概要">概要</h2>
+
+<ol>
+  <li>Gemにjekyll-sitemapを追加</li>
+  <li>_config.ymlにjekyll-sitemapを追加</li>
+  <li>除外ページ設定</li>
+  <li>ビルド</li>
+</ol>
+
+<h2 id="手順">手順</h2>
+<h3 id="1gemにjekyll-sitemapを追加">1.Gemにjekyll-sitemapを追加</h3>
+<p>Gemfileに追加</p>
+<pre><code class="language-gemfile">gem 'jekyll-sitemap'
+</code></pre>
+
+<h3 id="2_configymlにjekyll-sitemapを追加">2._config.ymlにjekyll-sitemapを追加</h3>
+<p>プラグインに追加</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
+</code></pre></div></div>
+
+<h3 id="3除外コンテンツの設定">3.除外コンテンツの設定</h3>
+<p>FrontMatter(https://jekyllrb-ja.github.io/docs/front-matter/)に追加する場合</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sitemap: false
+</code></pre></div></div>
+
+<p>FrontMatterが使用できないコンテンツに関しては、_config.ymlで設定するします。</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span>
+    <span class="na">scope</span><span class="pi">:</span>
+      <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/**/*.pdf"</span>
+    <span class="na">values</span><span class="pi">:</span>
+      <span class="na">sitemap</span><span class="pi">:</span> <span class="no">false</span>
+</code></pre></div></div>
+
+<h3 id="4ビルド">4.ビルド</h3>
+<p>最後にjekyll buildすればsitemap.xmlが生成されていることが確認できると思います。<br />
+robots.txtはクローラにサイトマップの位置などを指示するファイルです。こちらも自動生成してくれます。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root
+|-- _site
+|   |-- sitemap.xml
+|   |-- robots.txt
+</code></pre></div></div>]]></content><author><name>管理人</name></author><category term="jekyll" /><category term="article" /><summary type="html"><![CDATA[概要]]></summary></entry><entry><title type="html">免責事項</title><link href="https://blog.swimming-bird.link/p/menseki.html" rel="alternate" type="text/html" title="免責事項" /><published>2022-05-01T00:00:00+00:00</published><updated>2022-05-01T00:00:00+00:00</updated><id>https://blog.swimming-bird.link/p/menseki</id><content type="html" xml:base="https://blog.swimming-bird.link/p/menseki.html"><![CDATA[<p>当ブログからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。</p>
+
+<p>また当ブログのコンテンツ・情報について、できる限り正確な情報を提供するように努めておりますが、正確性や安全性を保証するものではありません。情報が古くなっていることもございます。</p>
+
+<p>当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。</p>]]></content><author><name>管理人</name></author><category term="owner" /><summary type="html"><![CDATA[当ブログからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。]]></summary></entry><entry><title type="html">プライバシーポリシー</title><link href="https://blog.swimming-bird.link/p/privacy.html" rel="alternate" type="text/html" title="プライバシーポリシー" /><published>2022-05-01T00:00:00+00:00</published><updated>2022-05-01T00:00:00+00:00</updated><id>https://blog.swimming-bird.link/p/privacy</id><content type="html" xml:base="https://blog.swimming-bird.link/p/privacy.html"><![CDATA[<h2 id="個人情報の利用目的">個人情報の利用目的</h2>
+
+<p>当ブログでは、お問い合わせや記事へのコメントの際、名前やメールアドレス等の個人情報を入力いただく場合がございます。
+取得した個人情報は、お問い合わせに対する回答や必要な情報を電子メールなどをでご連絡する場合に利用させていただくものであり、これらの目的以外では利用いたしません。</p>
+
+<h2 id="広告について">広告について</h2>
+
+<p>当ブログでは、第三者配信の広告サービス（Googleアドセンス）を利用しており、ユーザーの興味に応じた商品やサービスの広告を表示するため、クッキー（Cookie）を使用しております。
+クッキーを使用することで当サイトはお客様のコンピュータを識別できるようになりますが、お客様個人を特定できるものではありません。</p>
+
+<p>Cookieを無効にする方法やGoogleアドセンスに関する詳細は「<a href="https://policies.google.com/technologies/ads?hl=ja">広告 – ポリシーと規約 – Google</a>」をご確認ください。</p>
+
+<h2 id="アクセス解析ツールについて">アクセス解析ツールについて</h2>
+
+<p>当ブログでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。トラフィックデータは匿名で収集されており、個人を特定するものではありません。</p>]]></content><author><name>管理人</name></author><category term="owner" /><summary type="html"><![CDATA[個人情報の利用目的]]></summary></entry><entry><title type="html">リンクについて</title><link href="https://blog.swimming-bird.link/p/link.html" rel="alternate" type="text/html" title="リンクについて" /><published>2022-05-01T00:00:00+00:00</published><updated>2022-05-01T00:00:00+00:00</updated><id>https://blog.swimming-bird.link/p/link</id><content type="html" xml:base="https://blog.swimming-bird.link/p/link.html"><![CDATA[<p>当ブログは基本的にリンクフリーです。リンクを行う場合の許可や連絡は不要です。</p>
+
+<p>ただし、インラインフレームの使用や画像の直リンクはご遠慮ください。</p>]]></content><author><name>管理人</name></author><category term="owner" /><summary type="html"><![CDATA[当ブログは基本的にリンクフリーです。リンクを行う場合の許可や連絡は不要です。]]></summary></entry><entry><title type="html">著作権について</title><link href="https://blog.swimming-bird.link/p/cyosaku.html" rel="alternate" type="text/html" title="著作権について" /><published>2022-05-01T00:00:00+00:00</published><updated>2022-05-01T00:00:00+00:00</updated><id>https://blog.swimming-bird.link/p/cyosaku</id><content type="html" xml:base="https://blog.swimming-bird.link/p/cyosaku.html"><![CDATA[<p>当ブログで掲載している文章や画像などにつきましては、無断転載することを禁止します。</p>
+
+<p>当ブログは著作権や肖像権の侵害を目的としたものではありません。著作権や肖像権に関して問題がございましたら、お問い合わせフォームよりご連絡ください。迅速に対応いたします。</p>]]></content><author><name>管理人</name></author><category term="owner" /><summary type="html"><![CDATA[当ブログで掲載している文章や画像などにつきましては、無断転載することを禁止します。]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://blog.swimming-bird.link/jekyll/update/2022/04/30/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-04-30T20:17:17+00:00</published><updated>2022-04-30T20:17:17+00:00</updated><id>https://blog.swimming-bird.link/jekyll/update/2022/04/30/welcome-to-jekyll</id><content type="html" xml:base="https://blog.swimming-bird.link/jekyll/update/2022/04/30/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>管理人</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
